@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Отговорки</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stickers" aria-hidden="true">
+    <span class="sticker s1">😂</span><span class="sticker s2">🫠</span>
+    <span class="sticker s3">🤡</span><span class="sticker s4">😭</span>
+    <span class="sticker s5">🗿</span><span class="sticker s6">🐸</span>
+    <span class="sticker s7">💀</span><span class="sticker s8">🤯</span>
+    <span class="sticker s9">🚀</span><span class="sticker s10">😎</span>
+    <span class="sticker s11">💩</span><span class="sticker s12">🔥</span>
+  </div>
+
+  <main class="app">
+    <header class="hero">
+      <div class="badge">🎭 генератор отговорок</div>
+      <h1>Отговорки</h1>
+      <p>Выбирай ситуацию и получай правдоподобный ответ за секунду.</p>
+    </header>
+
+    <section class="card">
+      <div class="categories-wrap">
+        <div id="categories" class="categories" role="tablist" aria-label="Категории"></div>
+      </div>
+
+      <div class="selected-topic" id="selectedTopic"></div>
+
+      <div id="generator">
+        <button id="generateBtn" class="generate-btn">
+          <span>🎲</span> СГЕНЕРИРОВАТЬ ОТВЕТ
+        </button>
+
+        <div id="resultBox" class="result-box hidden">
+          <div id="excuse" class="excuse" title="Нажми, чтобы скопировать"></div>
+          <div id="copyStatus" class="copy-status" aria-live="polite"></div>
+          <button id="anotherBtn" class="another-btn">
+            🎲 Сгенерировать другой ответ
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer>Нажми на готовую отговорку, чтобы скопировать её</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
